@@ -101,6 +101,12 @@ aside{
   justify-content: center;
   align-items: center;
 }
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
 
 li{
