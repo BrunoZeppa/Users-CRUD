@@ -23,14 +23,16 @@ form{
   width: 350px;
   padding: 30px;
   align-self: center;
-  background-color: rgb(225, 222, 222);
+  background: linear-gradient(90deg, hsl(207, 95%, 8%),hsl(229, 26%, 16%), hsl(227, 24%, 27%));
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 15px;
+  color: #ffff;
 }
 form input{
   height: 25px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 3px;
 }
 .user-name{
   display: flex;
