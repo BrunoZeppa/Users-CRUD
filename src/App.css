@@ -27,6 +27,11 @@ form{
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   border-radius: 15px;
 }
+form input{
+  height: 25px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
 .user-name{
   display: flex;
   gap: 3px;
@@ -39,9 +44,12 @@ form{
 .input-long{
   width: 300px;
 }
+#birthday{
+  width: 304px;
+}
 
 form i{
-  margin-right: 5px;
+  margin-right: 7px;
   font-size: 12px;
 }
 form button{
