@@ -25,6 +25,7 @@ form{
   align-self: center;
   background-color: rgb(225, 222, 222);
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 15px;
 }
 .user-name{
   display: flex;
@@ -134,6 +135,12 @@ strong{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   margin: 20px;
+  border-radius: 15px;
+  transition: transform .3s ease;
+}
+.user-card:hover{
+  transform: scale(1.1);
+  transition: transform .3s ease;
 }
 .user-info{
   display: flex;
@@ -142,23 +149,45 @@ strong{
   gap: 3px;
 }
 
+
+
 .btns{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
+  background-color:unset;
 }
 .delete{
   border: none;
-  background-color: none;
+  background-color: unset;
   color: red;
+  transition: transform .2s;
+  cursor: pointer;
 }
 .update{
   border: none;
-  background-color: none;
+  background-color: unset;
   color: blue;
+  transition: transform .2s;
+  cursor: pointer;
 }
 
+.update:hover{
+  transform: scale(1.1);
+}
+.delete:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 1024px){
+  .user-card{
+    border-radius: 0px;
+  }
+  form{
+    border-radius: 0px;
+  }
+}
 
 
 

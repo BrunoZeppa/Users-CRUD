@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react'
-import './App.css'
-import UsersForm from './components/UsersForm'
-import axios from 'axios'
-import UsersList from './components/UsersList'
+import { useState, useEffect } from 'react';
+import './App.css';
+import UsersForm from './components/UsersForm';
+import axios from 'axios';
+import UsersList from './components/UsersList';
+import swal from 'sweetalert';
+
 
 function App() {
 
@@ -19,25 +21,25 @@ useEffect(() =>{
     .then(res => setUsers(res.data));
 }
 const addUser = (newUser) =>{
-  alert('adding user');
+  swal("Good job!", "You add a new user!", "success");
   axios.post('https://users-crud1.herokuapp.com/users/', newUser)
   .then(() => getUsers())
   .catch(error => console.log(error.response));
 }
 const deleteUser = id => {
-  alert('removing user');
+  swal("Warning!", "You removed a user! This action can not be undone", "warning");
   axios.delete(`https://users-crud1.herokuapp.com/users/${id}/`)
     .then(() => getUsers())
     .catch(error => console.log(error.response));
 }
 
 const selectUser = user => {
-  alert('user selected');
+  swal("Info!", "Use the form to update the user! ", "info");
   setUserSelected(user)
 };
 
 const updateUser = userUpdated =>{
-  alert('user updated');
+  swal("Good job!", "User updated!", "success");
   axios.put(`https://users-crud1.herokuapp.com/users/${userUpdated.id}/`, userUpdated)
   .then(() => getUsers())
 }
