@@ -109,6 +109,8 @@ aside{
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
+  justify-content: center;
+  align-items: center;
 }
 ul{
   display: flex;
