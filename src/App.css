@@ -20,7 +20,7 @@ form{
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 350px;
+  width: 300px;
   padding: 30px;
   align-self: center;
   background: linear-gradient(90deg, hsl(207, 95%, 8%),hsl(229, 26%, 16%), hsl(227, 24%, 27%));
@@ -36,18 +36,18 @@ form input{
 }
 .user-name{
   display: flex;
-  gap: 3px;
-  width: 325px;
-  align-self: center;
+  gap: 5px;
+  margin-bottom: 10px;
 }
 .user-name input{
-  width: 150px;
+  width: 120px;
 }
 .input-long{
-  width: 300px;
+  width: 250px;
+  margin-bottom: 10px;
 }
 #birthday{
-  width: 304px;
+  width: 250px;
 }
 
 form i{
@@ -108,15 +108,17 @@ form button:hover {
 aside{
   display: flex;
   flex-wrap: wrap;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
+  padding: 10px;
 }
 ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+
 }
 
 
@@ -144,7 +146,6 @@ strong{
   background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
-  margin: 20px;
   border-radius: 15px;
   transition: transform .3s ease;
 }
@@ -194,8 +195,38 @@ strong{
   .user-card{
     border-radius: 0px;
   }
+ 
   form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 350px;
+    padding: 30px;
+    align-self: center;
+    background: linear-gradient(90deg, hsl(207, 95%, 8%),hsl(229, 26%, 16%), hsl(227, 24%, 27%));
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 15px;
+    color: #ffff;
     border-radius: 0px;
+  }
+  .user-name{
+    display: flex;
+    row-gap: 3px;
+    width: 325px;
+    align-self: center;
+    margin-bottom: 5px;
+  }
+  .user-name input{
+    width: 150px;
+  }
+  .input-long{
+    width: 300px;
+    margin-bottom: 5px;
+  }
+  #birthday{
+    width: 304px;
   }
 }
 

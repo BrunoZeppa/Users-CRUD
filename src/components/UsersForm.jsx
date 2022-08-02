@@ -72,8 +72,7 @@ const reset = () =>{
                     value={firstName}
                     placeholder='First name'
                     required />
-
-                <label htmlFor="lastName"></label>
+                    
                 <input
                     type="text"
                     id='lastName'

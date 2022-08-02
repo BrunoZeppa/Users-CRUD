@@ -19,8 +19,7 @@ const UsersList = ({users, deleteUser, selectUser}) => {
                         </div>
                     </li>
                 ))
-            } 
-            
+            }  
         </ul>
         </aside>
     );
